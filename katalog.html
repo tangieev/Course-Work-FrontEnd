@@ -2,34 +2,28 @@
 <html lang="ru">
 
 <head>
-    <link type="image/png" rel="shortcut icon" href="./img/favicon1.png">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans+Narrow:wght@700&display=swap"
-        rel="stylesheet">
-    <title>Магазин самокатов</title>
+    <meta charset="UTF-8">
 
+    <link type="image/png" rel="shortcut icon" href="./img/favicon1.png">
+    <link rel="stylesheet" href="css/katalog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Магазин</title>
 </head>
 
-<style>
-    @media (max-width: 767px) {
-        .header .logo span{
-            display: none;
-        }
-    }
-</style>
 
 <body>
 
 
+<!-- /* <--------------Шапочка--------------------------------------------------->
+
+
     <header class="header">
         <div class="header__container">
+
             <div class="logo">
                 <a href="index.html "><img class="logo_inner" id="other" src="./img/logo.png" alt="Logo"
                         height="60px"></a>
@@ -54,133 +48,243 @@
     </header>
 
 
-    <section class="choice_help">
-        <div class="wrapper">
-            <nav class="woocommerce-breadcrumb"><a href="index.html">Главная</a> / <span>Каталог</span></nav>
-            <h2 class="help_title">Для кого вы выбираете электросамокат?</h2>
-            <p class="h2_desc"> Мы знаем, что посоветовать
-                каждому клиенту под его запрос</p>
-            <div class="choice_grid">
-                <a href="index.html" class="adult img_none">
-                    <div class="choice_desc">
-                        <h3>Для взрослых</h3>
-                        <ul>
-                            <li>Подойдут всем - если нет особых требований</li>
-                        </ul>
-                    </div>
-                </a>
-                <a href="index.html" class="tall">
-                    <img class="help_img "
-                        src="https://cim-pro.ru/wp-content/themes/cim-pro/assets/img/casual-male-riding-e.png"
-                        alt="Картинка">
-                    <div class="choice_desc">
-                        <h3>Для высоких</h3>
-                        <ul>
-                            <li>Увеличенная высота рулевой стойки</li>
-                            <li>Оптимальная площадь Дэки</li>
-                        </ul>
-                    </div>
-                </a>
-                <a href="index.html" class="big img_none">
-                    <div class="choice_desc">
-                        <h3>Для крупных</h3>
-                        <ul>
-                            <li>Шасси рассчитано для больших нагрузок</li>
-                        </ul>
-                    </div>
-                </a>
-                <a href="index.html" class="adult kids">
-                    <img src="https://cim-pro.ru/wp-content/themes/cim-pro/assets/img/full-shot-smiley-gir.png"
-                        alt="Картинка">
-                    <div class="choice_desc">
-                        <h3>Для детей</h3>
-                        <ul>
-                            <li>Специализированные модели</li>
-                            <li>Безопасная скорость и конструкция</li>
-                        </ul>
-                    </div>
-                </a>
-                <a href="index.html" class="adult girls">
-                    <img src="https://cim-pro.ru/wp-content/themes/cim-pro/assets/img/young-woman-riding-e.png"
-                        alt="Картинка">
-                    <div class="choice_desc">
-                        <h3>Для девушек</h3>
-                        <ul>
-                            <li>Вес не более 25кг</li>
-                            <li>Просты в управлении и использовании</li>
-                        </ul>
-                    </div>
-                </a>
+<!-------------------------------Интро--------------------------->
+
+
+
+
+
+<section class="choice_help">
+  <div class="wrapper">
+      <nav class="woocommerce-breadcrumb"><a href="index.html">Главная</a> / <span>Каталог</span></nav>
+      <h2 class="help_title">Для кого вы выбираете электросамокат?</h2>
+      <p class="h2_desc"> Мы знаем, что посоветовать
+          каждому клиенту под его запрос</p>
+      <div class="choice_grid">
+          <a href="index.html" class="adult img_none">
+              <div class="choice_desc">
+                  <h3>Для взрослых</h3>
+                  <ul>
+                      <li>Подойдут всем - если нет особых требований</li>
+                  </ul>
+              </div>
+          </a>
+          <a href="index.html" class="tall">
+              <img class="help_img "
+                  src="https://cim-pro.ru/wp-content/themes/cim-pro/assets/img/casual-male-riding-e.png"
+                  alt="Картинка">
+              <div class="choice_desc">
+                  <h3>Для высоких</h3>
+                  <ul>
+                      <li>Увеличенная высота рулевой стойки</li>
+                      <li>Оптимальная площадь Дэки</li>
+                  </ul>
+              </div>
+          </a>
+          <a href="index.html" class="big img_none">
+              <div class="choice_desc">
+                  <h3>Для крупных</h3>
+                  <ul>
+                      <li>Шасси рассчитано для больших нагрузок</li>
+                  </ul>
+              </div>
+          </a>
+          <a href="index.html" class="adult kids">
+              <img src="https://cim-pro.ru/wp-content/themes/cim-pro/assets/img/full-shot-smiley-gir.png"
+                  alt="Картинка">
+              <div class="choice_desc">
+                  <h3>Для детей</h3>
+                  <ul>
+                      <li>Специализированные модели</li>
+                      <li>Безопасная скорость и конструкция</li>
+                  </ul>
+              </div>
+          </a>
+          <a href="index.html" class="adult girls">
+              <img src="https://cim-pro.ru/wp-content/themes/cim-pro/assets/img/young-woman-riding-e.png"
+                  alt="Картинка">
+              <div class="choice_desc">
+                  <h3>Для девушек</h3>
+                  <ul>
+                      <li>Вес не более 25кг</li>
+                      <li>Просты в управлении и использовании</li>
+                  </ul>
+              </div>
+          </a>
+      </div>
+  </div>
+
+</section>
+
+
+
+<!-- /* <------------------------Каталог---------------------------->
+<div class="katalog">
+      <h2 class="help_title">Самокаты на любой вкус!</h2>
+    <div class="cards">
+    <section id="section-6"> 
+        <div class="card6">
+          <div class="imgBox">
+            <img src="./img/katsamokat (1).png"  class="trade">
+          </div>
+          <div class="contentBox">
+            <h4>Электросамокат El-Sport T8</h4>
+            <h2 class="price">25000 ₽</h2>
+            <a href="#" class="buy">Купить</a>
+          </div>
+        
+        </div>
+        <div class="card6">
+  
+            <div class="imgBox">
+              <img src="./img/katsamokat (2).png"  class="trade">
+            </div>
+            <div class="contentBox">
+              <h4>Электросамокат E-TWOW S-2</h4>
+              <h2 class="price">54900 ₽</h2>
+              <a href="#" class="buy">Купить</a>
+            </div>
+          
+        </div>
+        <div class="card6">
+  
+            <div class="imgBox">
+              <img src="./img/katsamokat (3).png"  class="trade">
+            </div>
+            <div class="contentBox">
+              <h4>ЭЛЕКТРОСАМОКАТ KUGOO S3</h4>
+              <h2 class="price">23900 ₽</h2>
+              <a href="#" class="buy">Купить</a>
             </div>
         </div>
+        <div class="card6">
+  
+            <div class="imgBox">
+              <img src="./img/katsamokat (4).png"  class="trade">
+            </div>
+            <div class="contentBox">
+              <h4>Электросамокат Kugoo S3</h4>
+              <h2 class="price">42000 ₽</h2>
+              <a href="#" class="buy">Купить</a>
+            </div>
+          
+        </div>
 
+        <div class="card6">
+  
+            <div class="imgBox">
+              <img src="./img/katsamokat (5).png"  class="trade">
+            </div>
+            <div class="contentBox">
+              <h4>Электросамокат El-Sport R8</h4>
+              <h2 class="price">34800 ₽</h2>
+              <a href="#" class="buy">Купить</a>
+            </div>
+          
+        </div>
+
+        <div class="card6">
+  
+            <div class="imgBox">
+              <img src="./img/katsamokat (6).png"  class="trade">
+            </div>
+            <div class="contentBox">
+              <h4>Электросамокат KUGOO Mini</h4>
+              <h2 class="price">19999 ₽</h2>
+              <a href="#" class="buy">Купить</a>
+            </div>
+          
+        </div>
     </section>
-
-        
-
-
+  </div>
+</div>
 
 
+<!-- ----------------------------------------------------------------------------------------------------------------------------------     -->
+    <!-- Футер-нижняя часть сайта -->
 
     <footer class="footer">
-            <div class="wwrapper">
-                <div class="footer__item">
-                    <div class="footer__logo">
-                        <img src="./img/favicon1.png" alt="Начало2" class="footer__logo-pic">
-                    </div>
-                    <nav class="footer__nav">
-                        <ul class="footerm__menu">
-                            <li class="footer__menu-item">
-                                <h3 class="footer__menu-title">О мне:</h3>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#!" class="footer__menu-link">Контакты</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#!" class="footer__menu-link">Тангиев Ю.А.</a>
-                            </li>
-                        </ul>
-                        <ul class="footerm__menu">
-                            <li class="footer__menu-item">
-                                <h3 class="footer__menu-title">Заказ</h3>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#!" class="footer__menu-link">Самовывоз</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#!" class="footer__menu-link">Доставка до двери</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#!" class="footer__menu-link">Доставка до метро</a>
-                            </li>
-
-                        </ul>
-                        <ul class="footerm__menu">
-                            <li class="footer__menu-item">
-                                <h3 class="footer__menu-title">Q&A</h3>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#!" class="footer__menu-link">Что за бренд?</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#!" class="footer__menu-link">Надёжна ли доставка?</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#!" class="footer__menu-link">Нужна ли предоплата?</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#!" class="footer__menu-link">Есть гарантии качества?</a>
-                            </li>
-                        </ul>
-                    </nav>
+        <div class="wwrapper">
+            <div class="footer__item">
+                <div class="footer__logo">
+                    <a class="footer__button" href="index.html"> <img src="./img/favicon1.png" alt="Начало2"
+                            class="footer__logo-pic"></a>
+                            <div class="footer_wrapper">
+                                <ul class="wrapper">
+                                    <li class="icon facebook">
+                                      <span class="tooltip">Facebook</span>
+                                      <span><i class="fa fa-facebook-f"></i></span>
+                                    </li>
+                                    <li class="icon twitter">
+                                      <span class="tooltip">Twitter</span>
+                                      <span><i class="fa fa-twitter"></i></span>
+                                    </li>
+                                    <li class="icon instagram">
+                                      <span class="tooltip">Instagram</span>
+                                      <span><i class="fa fa-instagram"></i></span>
+                                    </li>
+                                    <li class="icon github">
+                                      <span class="tooltip">Github</span>
+                                      <span><i class="fa fa-github"></i></span>
+                                    </li>
+                                    <li class="icon youtube">
+                                      <span class="tooltip">Youtube</span>
+                                      <span><i class="fa fa-youtube"></i></span>
+                                    </li>
+                                </ul>
+                                </div>
                 </div>
+                <nav class="footer__nav">
+                    <ul class="footerm__menu">
+                        <li class="footer__menu-item">
+                            <h3 class="footer__menu-title">О мне:</h3>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Контакты</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Тангиев Ю.А.</a>
+                        </li>
+                    </ul>
+                    <ul class="footerm__menu">
+                        <li class="footer__menu-item">
+                            <h3 class="footer__menu-title">Заказ</h3>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Самовывоз</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Доставка до двери</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Доставка до метро</a>
+                        </li>
+    
+                    </ul>
+                    <ul class="footerm__menu">
+                        <li class="footer__menu-item">
+                            <h3 class="footer__menu-title">Q&A</h3>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Что за бренд?</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Надёжна ли доставка?</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Нужна ли предоплата?</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Есть гарантии качества?</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+        </div>
     </footer>
 
-
-        <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
-
 
 </html>

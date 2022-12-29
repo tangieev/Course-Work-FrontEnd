@@ -37,6 +37,7 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
 
+
 /* ---------------------------------------------------------------- 
 /*Scroolbar*/
 
@@ -53,6 +54,7 @@ body::-webkit-scrollbar-thumb:hover{
     background-color: bisque;
 }
 
+
 /* <--------------Шапочка--------------------------------------------------------------> */
 body._lock{
     overflow: visible;
@@ -67,7 +69,7 @@ header{
     z-index: 10;
     min-height: 70px;
     max-height: 3vh;
-    background-color:rgb(255, 255, 255);
+    background-color:rgba(255, 255, 255, 0.788);
     padding-top: 5px;
     margin-bottom: 70px;
 }
@@ -246,23 +248,17 @@ header{
     }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 420px){
     .logo span{
         display: none;
     }
 }
 
-/* --------------------------------Оплата и доставка----------------------------------------------------------- */
+/* <---------------Каталог----------------------------> */
 
-.wrapper_oplata {
-    max-width: 1200px;
-    margin: 80px auto;
-}
+
 
 nav.woocommerce-breadcrumb {
-    margin: 20px 0;
-    margin-top: 100px;
-    color: #d4dade;
     font-weight: 400;
     font-family: 'Ubuntu';
     text-transform: uppercase;
@@ -278,25 +274,172 @@ nav.woocommerce-breadcrumb span {
     max-width: fit-content;
 }
 
-
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    color: #1a2026;
-    font-weight: 700;
-    margin-bottom: 40px;
-    font-size: 35px;
-    line-height: 1.17;
+.katalog{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-h2 {
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.katalog .help_title {
+    margin-bottom: 20px;
+    color: #1a2026;
+    background: linear-gradient(45deg, rgb(247,148,109), rgb(193,85,116));
+    padding: 10px;
+    border-radius: 10px;
     font-size: 30px;
-    margin-bottom: 30px;
+    width: 100%;
+    height: fit-content;
+}
+
+#section-6 {
+	display: flex;
+    width: 100%;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    box-sizing: border-box;
+}
+
+.card6 {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #191919;
+  border-radius: 20px;
+  margin-left: 40px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.card6::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #00aeff, rgb(193,85,116));
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card6:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card6::after {
+  content: "ТОП-1";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 7em;
+  color: rgba(173, 37, 37, 0.1);
+}
+
+.card6 .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  width: 300px;
+  height: 200px;
+  z-index: 1;
+}
+
+.card6 .contentBox {
+  position: relative;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card6 .contentBox h4 {
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card6 .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card6 .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #00aeff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card6:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.card6:hover .trade{
+  height: 200px;
+  width: auto;
+}
+
+.trade {
+  height: 250px;
+  width: auto;
+}
+
+.help_title{
+    display: block;
+}
+
+
+/* <!-------------------------------Интро---------------------------> */
+
+.choice_help{
+    padding: 0 0 0;
+    padding-top: 100px;
+}
+section{
+    display: block;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.choice_help h2 {
+    margin-bottom: 20px;
+    color: #1a2026;
+    background:linear-gradient(45deg, rgb(247,148,109), rgb(193,85,116));
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.help_title {
     display: block;
     font-size: 1.5em;
     margin-block-start: 0.83em;
@@ -306,170 +449,214 @@ h2 {
     font-weight: bold;
 }
 
-.help_title {
-    margin-bottom: 20px;
-    color: #1a2026;
-    background:linear-gradient(45deg, rgb(247,148,109), rgb(193,85,116));
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 30px;
-    
-}
-
-.entry-content{
-    margin-top: 40px;
-}
-
-
-.has-text-align-center {
-    text-align: center;
-
-}
-
-.has-medium-font-size{
+.choice_help p {
     font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 40px;
 }
 
-.wp-block-image{
-    margin: 15px;
+.h2_desc {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.55;
+    margin-bottom: 0;
 }
 
-
-.wp-block-columns.wp-container-4, .wp-block-columns.wp-container-8 {
-    flex-wrap: nowrap;
-}
-
-body .is-layout-flex {
-    display: flex;
-}
-
-.wp-block-columns.is-layout-flex{
-    margin: 30px 0px;
-}
-
-
-.has-text-align-center {
-    text-align: center;
-}
-
-
-.wp-block-image .aligncenter {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.wp-block-image.aligncenter, .wp-block-image .aligncenter, .wp-block-image.alignleft, .wp-block-image .alignleft, .wp-block-image.alignright, .wp-block-image .alignright {
-    display: table;
-}
-
-
-.wp-block-image img {
-    height: auto;
-    max-width: 100%;
-    vertical-align: bottom;
-}
-
-
-
-/* MEDIA */
-@media (min-width: 782px)
-{
-.wp-block-columns {
-    display: flex;
-    margin-bottom: 1.75em;
-    box-sizing: border-box;
-
-}
-
-.wp-block-columns .wp-block-column {
-    flex-basis: 0;
-    flex-grow: 1;
-}
-
-};
-
-
-/* ------------Вопросы?????????????-------------- */
 p {
     color: #1a2026;
     font-size: 16px;
     line-height: 1.55;
-    font-weight: 300;
+    font-weight: 700;
     margin-bottom: 25px;
 }
 
-.service_callback h2{
-    font-size: 33px;
-}
-
-.service_callback {
-    padding: 45px 0 30px 0;
-    background: linear-gradient(360deg, rgb(246, 146, 109), rgb(193, 85, 116));;
-    text-align: center;
-    max-width: 1200px;
-    margin: 80px auto;
-    border-radius: 20px;
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 
-.service_callback_desc {
-    color: #1a2026;
-    font-size: 18px;
-    max-width: 600px;
-    margin: 25px auto 70px auto;
-    font-weight: 600;
+.choice_grid {
+    display: grid;
+    padding: 0 0 75px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "girls adult tall"
+        "girls kids tall"
+        "big kids tall";
 }
 
-.callback_btn {
-    cursor: pointer;
-    background-color: #000000;
-    color: #ffffff;
-    text-transform: uppercase;
-    transition: all 0.3s;
+.choice_grid>a {
+    position: relative;
     display: flex;
-    align-items: center;
-    width: fit-content;
-    padding: 0 60px;
-    border-radius: 15px;
-    font-size: 16px;
-    font-weight: 900px;
-    height: 56px;
-    margin: 0 auto;
-}
-
-
-.callback_social_links {
-    margin-top: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-
-a {
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    border-radius: 10px;
     text-decoration: none;
     color: inherit;
     color: #676bc2;
 }
-svg {
-    transform: translateZ(0);
-    shape-rendering: geometricPrecision;
-}
 
-svg {
-    transition-delay: 0s;
-}
-
-:not(svg) {
-    transform-origin: 0px 0px;
+.img_none {
+    background: linear-gradient(rgb(246,146,109), rgb(193,85,116));
 }
 
 
+.adult{
+grid-area: adult;
+}
+
+.tall {
+    grid-area: tall;
+}
+
+.kids {
+    grid-area: kids;
+}
+
+.girls {
+    grid-area: girls;
+}
+
+.tall, .kids, .girls {
+    background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.6));
+}
+
+.choice_desc {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    padding: 30px;
+    color: #fff;
+}
+
+.choice_desc h3 {
+    font-size: 24px;
+    text-align: left;
+}
+
+
+
+.choice_desc ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.choise_desc ul{
+    list-style: disc;
+    padding-left: 20px;
+}
+
+ol,ul{
+    box-sizing: border-box;
+}
+
+.choise_desc ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.choice_grid>a img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}   
+
+.help_img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 900px)
+{
+.wrapper {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.img_none {
+    background: linear-gradient(0deg,rgb(246,146,109), rgb(193,85,116)  100%);
+}
+
+
+h2, .catalog h2, .choice_help h2 {
+    padding-bottom: 20px;
+}
+
+
+.h2_desc {
+    display: none;
+}
+
+.choice_grid {
+    max-width: 620px;
+    margin: 0 auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto 300px;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "girls big"
+        "adult kids"
+        "tall tall";
+}
+
+.choice_grid {
+    padding-top: 15px;
+}
+
+.choice_desc {
+    padding: 20px;
+}
+
+.choice_desc h3 {
+    font-size: 18px;
+    min-height: auto;
+    padding-bottom: 10px;
+}
+
+.choice_desc ul {
+    display: none;
+}
+
+.tall img {
+    height: auto !important;
+    transform: translateY(30%);
+}
+
+}
 
 /* ---------------------------------------------------------------- 
 -------------------------------------------------------------------*/
 /* Футер */
+
 
 .footer{
     background:rgba(218, 157, 107, 0.712);
@@ -574,6 +761,8 @@ footer.logo{
 
 .footer__menu-link:hover, .footer__menu-link:focus, .footer__menu-link:active{
     opacity: .75;
+    color: #00aeff;
+    transition: 0.5s;
 }
 
 
